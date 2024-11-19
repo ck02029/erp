@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.body{
+    background-color:#ccc5b9;
+}
+.navbar {
+    height: 80px;
+    background-color: #403d39;
+    display: flex;
+    color: white;
+}
+
+.nav-logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+}
+
+.logo {
+    background-image: url("images/erp.png");
+    height: 60px;
+    width: 100%;
+    background-size: cover;
+}
+.logo:hover{
+    cursor:pointer;
+}
+
+.nav-options {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.options {
+    margin-left: 10px;
+    position: relative;
+}
+
+.options a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    position: relative;
+}
+
+.options a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background:#fff;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.options:hover a:after {
+    width: 100%;
+}
+
+.options-logo {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group button {
+    margin-left: 50px;
+    margin-right: 25px;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-image:#fff;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+
+.form-box{
+    width:90%;
+    max-width:450px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    padding:50px 60px 70px;
+    text-align:center;
+}
+
+.form-box h1{
+    font-size:30px;
+    margin-bottom:60px;
+    color:#403d39;
+    position:relative;
+}
+
+.form-box h1::after{
+    content:'';
+    width:30px;
+    height:4px;
+    border-radius:3px;
+    background:#403d39;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.input-field{
+    background:#eaeaea;
+    margin:15px 0;
+    border-radius:3px;
+    display:flex;
+    align-items:center;
+    max-Height:65px;
+    transition:max-Height 0.5s;
+    overflow:hidden;
+}
+
+input{
+    width:100%;
+    background:transparent;
+    border:0;
+    outline:0;
+    padding:18px 15px;
+}
+
+.input-field i{
+    margin-left:15px;
+    color:#999;
+}
+
+form p{
+    text-align:left;
+    font-size:13px;
+}
+
+form p a{
+    text-decoration:none;
+    color:#403d39;
+}
+
+.button-field button{
+    flex-basis:48%;
+    background:#403d39;
+    color:#fff;
+    height:40px;
+    width:150px;
+    border-radius:20px;
+    border:0;
+    outline:0;
+    cursor:pointer;
+    transition:background 1s;
+    margin-bottom:10px;
+}
+
+.input-group{
+    height:230px;
+}
+
+.button-field p{
+    text-align:center;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.forget-passwod{
+    margin-bottom:10px;
+}
+
